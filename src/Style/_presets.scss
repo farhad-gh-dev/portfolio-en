@@ -1,0 +1,88 @@
+h1,
+h2,
+h3 {
+  font-family: "Germany Sans";
+  font-weight: normal;
+}
+
+p,
+button,
+input {
+  font-family: "Noto Sans JP";
+  font-weight: lighter;
+}
+
+h1 {
+  font-size: $h1_font_size_mobile;
+
+  @include sm-size {
+    font-size: $h1_font_size_tablet;
+  }
+
+  @include lg-size {
+    font-size: $h1_font_size_desktop;
+  }
+}
+
+h2 {
+  font-size: $h2_font_size_mobile;
+  margin-bottom: $h2_bottom_margin_mobile;
+
+  @include sm-size {
+    font-size: $h2_font_size_tablet;
+    margin-bottom: $h2_bottom_margin_table;
+  }
+
+  @include lg-size {
+    font-size: $h2_font_size_desktop;
+    margin-bottom: $h2_bottom_margin_desktop;
+  }
+}
+
+h2 {
+  font-size: $h3_font_size_mobile;
+
+  @include sm-size {
+    font-size: $h3_font_size_tablet;
+  }
+
+  @include lg-size {
+    font-size: $h3_font_size_desktop;
+  }
+}
+
+p {
+  font-size: $p_font_size_mobile;
+
+  @include sm-size {
+    font-size: $p_font_size_tablet;
+  }
+
+  @include lg-size {
+    font-size: $p_font_size_desktop;
+  }
+}
+
+button {
+  font-size: $button_font_size_mobile;
+
+  @include sm-size {
+    font-size: $button_font_size_tablet;
+  }
+
+  @include lg-size {
+    font-size: $button_font_size_desktop;
+  }
+}
+
+button {
+  font-size: $input_font_size_mobile;
+
+  @include sm-size {
+    font-size: $input_font_size_tablet;
+  }
+
+  @include lg-size {
+    font-size: $input_font_size_desktop;
+  }
+}
