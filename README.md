@@ -1,7 +1,7 @@
 # Portfolio Project
 
 This is a template i designed and developed to showcase my projects.
-![alt text](https://github.com/farhad-gh-dev/portfolio-en/blob/master/screenshot.png?raw=true)
+![alt text](https://github.com/farhad-gh-dev/portfolio-en/blob/master/src/Assets/screenshot.png?raw=true)
 
 ## Usage of this template
 
