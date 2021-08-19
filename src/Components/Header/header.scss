@@ -1,0 +1,242 @@
+@import "../../Style/breakpoints";
+@import "../../Style/variables";
+
+.header {
+  .text-area {
+    padding: 30px 25px 0;
+
+    @include sm-size {
+      padding: 70px 70px 0;
+    }
+
+    @include lg-size {
+      padding: 80px 80px 0;
+    }
+
+    .brand-logo {
+      img {
+        width: 35px;
+
+        @include sm-size {
+          width: 55px;
+        }
+      }
+
+      .small-text {
+        margin: 5px 0 90px 5px;
+
+        @include sm-size {
+          margin: 10px 0 90px 5px;
+        }
+
+        @include lg-size {
+          margin: 15px 0 115px 5px;
+        }
+      }
+    }
+
+    .small-text {
+      font-size: 10px;
+      transform: rotate(90deg);
+      transform-origin: left;
+      letter-spacing: 0.3em;
+
+      @include sm-size {
+        font-size: 12px;
+      }
+
+      @include lg-size {
+        font-size: 14px;
+      }
+    }
+
+    .bottom-right-text {
+      right: 25px;
+      bottom: 3.08vh;
+
+      @include sm-size {
+        right: 35px;
+        bottom: 5.4vh;
+      }
+
+      @include lg-size {
+        right: 50px;
+        bottom: 13.88vh;
+      }
+
+      .small-text {
+        transform-origin: right;
+      }
+    }
+
+    .social-media-container {
+      right: 25px;
+      margin-top: 55px;
+
+      @include sm-size {
+        right: 35px;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-top: 0px;
+      }
+
+      @include lg-size {
+        right: 60px;
+        top: unset;
+        transform: translateY(0);
+        margin-top: 0;
+      }
+
+      .social-media-link {
+        svg {
+          width: 23px;
+          height: auto;
+
+          @include sm-size {
+            width: 25px;
+          }
+
+          @include lg-size {
+            width: 30px;
+          }
+
+          path {
+            transition: 0.2s ease-in-out;
+          }
+        }
+
+        &:hover {
+          svg {
+            path {
+              fill: $accent_color;
+            }
+          }
+        }
+      }
+    }
+
+    .title {
+      .hi {
+        font-size: 22px;
+        margin-bottom: 12px;
+
+        @include sm-size {
+          font-size: 27px;
+        }
+
+        @include xxl-size {
+          font-size: 35px;
+          margin-bottom: 15px;
+        }
+      }
+
+      h1 {
+        margin-bottom: 35px;
+
+        @include sm-size {
+          margin-bottom: 46px;
+        }
+
+        @include lg-size {
+          margin-bottom: 36px;
+        }
+
+        @include xl-size {
+          margin-bottom: 46px;
+        }
+
+        @include xxl-size {
+          margin-bottom: 55px;
+        }
+      }
+    }
+
+    .description {
+      padding: 0 13px 0 17px;
+      margin-bottom: 140px;
+
+      @include sm-size {
+        padding: 0 15px 0 95px;
+        margin-bottom: 130px;
+      }
+
+      @include lg-size {
+        padding: 0 0 0 60px;
+        margin-bottom: 100px;
+      }
+
+      @include xl-size {
+        padding: 0 0 0 100px;
+        margin-bottom: 120px;
+      }
+
+      @include xxl-size {
+        padding: 0 40px 0 120px;
+        margin-bottom: 150px;
+      }
+
+      p {
+        font-size: 16px;
+
+        @include sm-size {
+          font-size: 25px;
+        }
+
+        @include lg-size {
+          font-size: 22px;
+        }
+
+        @include xxl-size {
+          font-size: 30px;
+        }
+
+        span {
+          color: $accent_color;
+        }
+      }
+    }
+
+    .projects-button {
+      width: 120px;
+
+      @include sm-size {
+        width: auto;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -17px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 2px;
+        width: 30px;
+        background-color: $accent_color;
+
+        @include sm-size {
+          width: 40px;
+        }
+
+        @include lg-size {
+          bottom: -23px;
+          height: 3px;
+          width: 50px;
+        }
+      }
+    }
+  }
+
+  .background-image-container {
+    width: 74vw;
+    box-shadow: -5px 0 25px rgba(0, 0, 0, 0.12);
+
+    @include sm-size {
+      width: 67vw;
+      box-shadow: -10px 0 30px rgba(0, 0, 0, 0.12);
+    }
+
+    @include lg-size {
+      width: 44vw;
+    }
+  }
+}

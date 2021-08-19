@@ -1,13 +1,15 @@
 h1,
 h2,
-h3 {
+h3,
+.custom-primary-font {
   font-family: "Germany Sans";
   font-weight: normal;
 }
 
 p,
 button,
-input {
+input,
+.custom-secondary-font {
   font-family: "Noto Sans JP";
   font-weight: lighter;
 }
@@ -19,7 +21,11 @@ h1 {
     font-size: $h1_font_size_tablet;
   }
 
-  @include lg-size {
+  @include xl-size {
+    font-size: $h1_font_size_tablet + 10px;
+  }
+
+  @include xxl-size {
     font-size: $h1_font_size_desktop;
   }
 }
@@ -75,7 +81,7 @@ button {
   }
 }
 
-button {
+input {
   font-size: $input_font_size_mobile;
 
   @include sm-size {

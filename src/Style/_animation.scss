@@ -1,0 +1,72 @@
+.header {
+  .navbar-links-container {
+    @include sm-size {
+      transform: translateX(-80px);
+      opacity: 0;
+      animation: reveal-animation 0.9s ease-in-out forwards;
+    }
+  }
+
+  .brand-logo {
+    transform: translateY(30px);
+    opacity: 0;
+    animation: reveal-animation 0.6s ease-in-out forwards;
+
+    @include sm-size {
+      transform: translateY(50px);
+    }
+  }
+
+  .bottom-right-text {
+    transform: translateY(-30px);
+    opacity: 0;
+    animation: reveal-animation 0.8s ease-in-out forwards;
+
+    @include sm-size {
+      transform: translateY(-50px);
+    }
+  }
+
+  .social-media-container {
+    opacity: 0;
+    animation: reveal-animation-opacity 1.2s ease-in-out forwards;
+  }
+
+  .title {
+    transform: translateX(30px);
+    opacity: 0;
+    animation: reveal-animation 0.8s ease-in-out forwards;
+
+    @include sm-size {
+      transform: translateX(50px);
+    }
+  }
+
+  .description {
+    transform: translateX(-30px);
+    opacity: 0;
+    animation: reveal-animation 0.9s ease-in-out forwards;
+
+    @include sm-size {
+      transform: translateX(-50px);
+    }
+  }
+
+  .projects-button {
+    opacity: 0;
+    animation: reveal-animation 1.2s ease-in-out forwards;
+  }
+}
+
+@keyframes reveal-animation {
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes reveal-animation-opacity {
+  to {
+    opacity: 1;
+  }
+}

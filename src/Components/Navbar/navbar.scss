@@ -1,0 +1,115 @@
+@import "../../Style/breakpoints";
+@import "../../Style/variables";
+
+.navbar {
+  height: auto;
+
+  @include sm-size {
+    top: 50px;
+    right: 50px;
+  }
+
+  @include md-size {
+    top: 100px;
+    right: 110px;
+  }
+
+  @include lg-size {
+    right: 120px;
+  }
+
+  .navbar-button-container {
+    margin: 30px 25px 0 0;
+
+    .navbar-button {
+      width: 20px;
+      height: 20px;
+
+      .dot {
+        width: 4px;
+        height: 4px;
+      }
+    }
+  }
+
+  .navbar-links-panel {
+    display: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
+
+    @include sm-size {
+      display: block;
+      box-shadow: none;
+    }
+
+    .navbar-links-container {
+      .navbar-link {
+        font-size: 24px;
+        margin-bottom: 30px;
+        z-index: 0;
+
+        &::after {
+          content: "";
+          display: none;
+          position: absolute;
+          top: 12px;
+          left: 50%;
+          transform: translateX(-50%);
+          height: 21px;
+          width: 125%;
+          background-color: lighten($accent_color, 15);
+          border-radius: 2px;
+          z-index: -1;
+
+          @include sm-size {
+            top: 15px;
+            left: -22px;
+            transform: translateX(0);
+            width: 100%;
+            height: 28px;
+          }
+
+          @include lg-size {
+            top: 26px;
+            left: -24px;
+            width: 100%;
+            height: 44px;
+          }
+        }
+
+        &:hover {
+          &::after {
+            display: block;
+          }
+        }
+
+        @include sm-size {
+          font-size: 33px;
+          margin-bottom: 10px;
+          text-shadow: 2px 0 1px #ffffff;
+        }
+
+        @include md-size {
+          margin-bottom: 35px;
+        }
+
+        @include lg-size {
+          font-size: 50px;
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+
+  &.active {
+    height: 400px;
+    width: 100%;
+
+    @include sm-size {
+      width: auto;
+    }
+
+    .navbar-links-panel {
+      display: flex;
+    }
+  }
+}
