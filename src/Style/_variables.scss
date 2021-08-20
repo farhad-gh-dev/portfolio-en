@@ -1,31 +1,43 @@
 $accent_color: #de1738;
 
 // FONT SIZE
-$h1_font_size_desktop: 60px;
-$h1_font_size_tablet: 38px;
 $h1_font_size_mobile: 25px;
+$h1_font_size_tablet: 38px;
+$h1_font_size_desktop: 60px;
 
-$h2_font_size_desktop: 50px;
-$h2_font_size_tablet: 33px;
 $h2_font_size_mobile: 25px;
+$h2_font_size_tablet: 33px;
+$h2_font_size_desktop: 50px;
 
-$h3_font_size_desktop: 35px;
-$h3_font_size_tablet: 25px;
 $h3_font_size_mobile: 22px;
+$h3_font_size_tablet: 25px;
+$h3_font_size_desktop: 35px;
 
-$p_font_size_desktop: 23px;
-$p_font_size_tablet: 19px;
 $p_font_size_mobile: 16px;
+$p_font_size_tablet: 19px;
+$p_font_size_desktop: 23px;
 
-$button_font_size_desktop: 25px;
-$button_font_size_tablet: 22px;
 $button_font_size_mobile: 18px;
+$button_font_size_tablet: 22px;
+$button_font_size_desktop: 25px;
 
-$input_font_size_desktop: 18px;
-$input_font_size_tablet: 16px;
 $input_font_size_mobile: 14px;
+$input_font_size_tablet: 16px;
+$input_font_size_desktop: 18px;
 
 // SPACING
-$h2_bottom_margin_desktop: 100px;
-$h2_bottom_margin_table: 70px;
+$section_bottom_margin_mobile: 30px;
+$section_bottom_margin_tablet: 50px;
+$section_bottom_margin_desktop: 100px;
+
+$section_padding_mobile: 60px 30px 0;
+$section_padding_tablet: 110px 40px 0;
+$section_padding_desktop: 150px 50px 0;
+
 $h2_bottom_margin_mobile: 40px;
+$h2_bottom_margin_table: 70px;
+$h2_bottom_margin_desktop: 100px;
+
+// CONTAINER WIDTH
+$section_max_width_tablet: 774px;
+$section_max_width_desktop: 1520px;

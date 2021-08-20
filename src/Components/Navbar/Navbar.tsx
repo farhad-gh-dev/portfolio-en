@@ -34,7 +34,7 @@ const Navbar: React.FC = () => {
         <div className="navbar-links-container">
           {navbarLinks.map((link) => {
             return (
-              <div className="text-center sm:text-left">
+              <div key={link.title} className="text-center sm:text-left">
                 <a
                   href={link.href}
                   className="navbar-link relative inline-block custom-primary-font"

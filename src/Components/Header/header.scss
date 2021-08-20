@@ -2,6 +2,16 @@
 @import "../../Style/variables";
 
 .header {
+  margin-bottom: $section_bottom_margin_mobile;
+
+  @include sm-size {
+    margin-bottom: $section_bottom_margin_tablet;
+  }
+
+  @include lg-size {
+    margin-bottom: $section_bottom_margin_desktop;
+  }
+
   .text-area {
     padding: 30px 25px 0;
 

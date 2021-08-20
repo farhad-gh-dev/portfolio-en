@@ -45,7 +45,7 @@ h2 {
   }
 }
 
-h2 {
+h3 {
   font-size: $h3_font_size_mobile;
 
   @include sm-size {
@@ -90,5 +90,23 @@ input {
 
   @include lg-size {
     font-size: $input_font_size_desktop;
+  }
+}
+
+.section {
+  margin-bottom: $section_bottom_margin_mobile;
+  padding: $section_padding_mobile;
+
+  @include sm-size {
+    max-width: $section_max_width_tablet;
+    margin: auto;
+    margin-bottom: $section_bottom_margin_tablet;
+    padding: $section_padding_tablet;
+  }
+
+  @include lg-size {
+    max-width: $section_max_width_desktop;
+    margin-bottom: $section_bottom_margin_desktop;
+    padding: $section_padding_desktop;
   }
 }
