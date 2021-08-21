@@ -1,0 +1,108 @@
+@import "../../Style/breakpoints";
+@import "../../Style/variables";
+
+.contact {
+  .text-area {
+    padding-right: 20px;
+    @include lg-size {
+      padding-top: 190px;
+    }
+
+    .small-text {
+      font-size: 10px;
+      transform: rotate(90deg);
+      transform-origin: right;
+      letter-spacing: 0.3em;
+      top: 80px;
+
+      @include sm-size {
+        font-size: 12px;
+        top: 96px;
+      }
+
+      @include lg-size {
+        font-size: 14px;
+        top: 112px;
+        margin-right: 10px;
+      }
+    }
+
+    .contact-description {
+      margin-bottom: 35px;
+
+      @include sm-size {
+        margin-bottom: 60px;
+      }
+
+      @include lg-size {
+        margin-bottom: 90px;
+      }
+    }
+
+    .contact-links {
+      margin-bottom: 15px;
+
+      @include sm-size {
+        margin-bottom: 45px;
+      }
+
+      @include lg-size {
+        margin-bottom: 0;
+      }
+
+      .contact-link {
+        margin-bottom: 20px;
+
+        @include sm-size {
+          margin-bottom: 0;
+        }
+
+        &:first-child {
+          @include sm-size {
+            margin-bottom: 25px;
+          }
+        }
+        span,
+        a {
+          font-size: $p_font_size_mobile;
+          text-transform: capitalize;
+          font-weight: bold;
+
+          @include sm-size {
+            font-size: $p_font_size_tablet;
+          }
+
+          @include lg-size {
+            font-size: $p_font_size_desktop;
+          }
+        }
+        span {
+          display: block;
+          margin-bottom: 5px;
+
+          @include lg-size {
+            margin-bottom: 8px;
+          }
+        }
+
+        a {
+          color: $accent_color;
+        }
+      }
+    }
+  }
+
+  .form-container {
+    @include lg-size {
+      padding-left: 30px;
+    }
+
+    @include xl-size {
+      padding-left: 60px;
+    }
+
+    @include xxl-size {
+      padding-left: 80px;
+    }
+  }
+}

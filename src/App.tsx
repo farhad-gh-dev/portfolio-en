@@ -4,6 +4,7 @@ import Header from "./Components/Header/Header";
 import Skills from "./Components/Skills/Skills";
 import Projects from "./Components/Projects/Projects";
 import About from "./Components/About/About";
+import Contact from "./Components/Contact/Contact";
 import "./Style/app.scss";
 import "aos/dist/aos.css";
 
@@ -22,6 +23,7 @@ const App: React.FC = () => {
       <Skills />
       <Projects />
       <About />
+      <Contact />
     </div>
   );
 };

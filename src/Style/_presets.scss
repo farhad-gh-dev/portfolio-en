@@ -10,6 +10,7 @@ p,
 a,
 button,
 input,
+span,
 .custom-secondary-font {
   font-family: "Noto Sans JP";
   font-weight: lighter;
@@ -84,7 +85,8 @@ a {
   }
 }
 
-input {
+input,
+textarea {
   font-size: $input_font_size_mobile;
 
   @include sm-size {
