@@ -52,9 +52,12 @@ const Header: React.FC = () => {
             </p>
           </div>
           <div className="mb-32 lg:mb-24 pl-24 sm:pl-56 md:pl-72 lg:pl-0 text-center">
-            <button className="projects-button relative font-bold capitalize">
+            <a
+              href="#projects"
+              className="projects-link relative font-bold capitalize"
+            >
               check out my projects
-            </button>
+            </a>
           </div>
         </div>
       </div>
