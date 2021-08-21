@@ -11,7 +11,7 @@ const App: React.FC = () => {
   useEffect(() => {
     Aos.init({
       once: true,
-      duration: 1000,
+      duration: 1400,
     });
   }, []);
 

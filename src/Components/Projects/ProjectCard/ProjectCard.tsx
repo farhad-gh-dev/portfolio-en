@@ -19,7 +19,10 @@ const ProjectCard: React.FC<Props> = ({
       }`}
     >
       <div className={`${isLeftSided ? " lg:order-1" : " lg:order-2"}`}>
-        <div className="project-image-container relative">
+        <div
+          className="project-image-container relative"
+          data-aos={`${isLeftSided ? "fade-right" : "fade-left"}`}
+        >
           <img
             src={projectData.desktopScreenshot}
             alt={projectData.title}
@@ -41,6 +44,8 @@ const ProjectCard: React.FC<Props> = ({
           className={`project-title${
             isLeftSided ? " text-left" : " text-right lg:text-left"
           }`}
+          data-aos="fade-up"
+          data-aos-delay="200"
         >
           <h3>
             {projectData.title.split(" ").map((word) => {
@@ -52,10 +57,14 @@ const ProjectCard: React.FC<Props> = ({
             })}
           </h3>
         </div>
-        <div className="description">
+        <div className="description" data-aos="fade-right" data-aos-delay="350">
           <p>{projectData.description}</p>
         </div>
-        <div className="project-details">
+        <div
+          className="project-details"
+          data-aos="fade-left"
+          data-aos-delay="450"
+        >
           <p>
             <span>Date.</span> {projectData.date}
           </p>
@@ -67,11 +76,17 @@ const ProjectCard: React.FC<Props> = ({
           </p>
         </div>
 
-        <div className="project-links">
+        <div className="project-links" data-aos="fade-up" data-aos-delay="500">
           <a href={projectData.demoLink}>live view</a>
           <a href={projectData.githubRepoLink}>Git repository</a>
         </div>
       </div>
+      <div
+        className={`bottom-border absolute bottom-0${
+          isLeftSided ? " left-0" : " right-0"
+        }`}
+        data-aos={`${isLeftSided ? "fade-left" : "fade-right"}`}
+      ></div>
     </div>
   );
 };

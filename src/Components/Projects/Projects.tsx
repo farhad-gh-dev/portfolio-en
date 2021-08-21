@@ -31,6 +31,8 @@ const Projects: React.FC = () => {
         <button
           onClick={loadMoreProjectsHandler}
           className="load-button mt-1 sm:mt-0"
+          data-aos="fade-up"
+          data-aos-delay="100"
         >
           show more projects
         </button>

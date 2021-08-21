@@ -15,24 +15,6 @@
     margin-bottom: 70px;
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    height: 1px;
-    width: 135px;
-    background-color: #000;
-
-    @include sm-size {
-      width: 215px;
-      height: 2px;
-    }
-
-    @include lg-size {
-      width: 300px;
-    }
-  }
-
   .project-image-container {
     .desktop-screenshot {
       box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
@@ -144,11 +126,22 @@
     }
   }
 
-  &.left {
-    &::after {
-      left: 0;
+  .bottom-border {
+    background-color: black;
+    height: 1px;
+    width: 135px;
+
+    @include sm-size {
+      width: 215px;
+      height: 2px;
     }
 
+    @include lg-size {
+      width: 300px;
+    }
+  }
+
+  &.left {
     .project-image-container {
       padding: 0 30px 23px 0;
 
@@ -177,10 +170,6 @@
   }
 
   &.right {
-    &::after {
-      right: 0;
-    }
-
     .project-image-container {
       padding: 0 0 23px 30px;
 
