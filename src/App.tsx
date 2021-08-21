@@ -3,6 +3,7 @@ import Aos from "aos";
 import Header from "./Components/Header/Header";
 import Skills from "./Components/Skills/Skills";
 import Projects from "./Components/Projects/Projects";
+import About from "./Components/About/About";
 import "./Style/app.scss";
 import "aos/dist/aos.css";
 
@@ -20,6 +21,7 @@ const App: React.FC = () => {
       <Header />
       <Skills />
       <Projects />
+      <About />
     </div>
   );
 };

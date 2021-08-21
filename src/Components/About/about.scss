@@ -1,0 +1,99 @@
+@import "../../Style/breakpoints";
+@import "../../Style/variables";
+
+.about {
+  .image-container {
+    padding: 0 85px 49px 0;
+
+    @include sm-size {
+      padding: 0 190px 110px 0;
+    }
+
+    @include lg-size {
+      padding: 0 160px 170px 0;
+    }
+
+    .front-image {
+      width: 42%;
+
+      @include sm-size {
+        width: 52%;
+      }
+    }
+  }
+
+  .text-area {
+    margin-top: 30px;
+
+    @include sm-size {
+      margin-top: 50px;
+    }
+
+    @include lg-size {
+      margin-top: 35px;
+      padding-left: 30px;
+    }
+
+    @include xl-size {
+      padding-left: 60px;
+    }
+
+    @include xxl-size {
+      padding-left: 90px;
+    }
+
+    p {
+      margin-bottom: 10px;
+
+      @include sm-size {
+        margin-bottom: 15px;
+      }
+
+      @include lg-size {
+        margin-bottom: 10px;
+      }
+
+      &.first-paragraph {
+        margin-bottom: 25px;
+
+        @include lg-size {
+          margin-bottom: 40px;
+        }
+      }
+
+      &.projects-link {
+        margin-bottom: 0;
+        margin-top: 20px;
+
+        @include sm-size {
+          margin-bottom: 0;
+          margin-top: 30px;
+        }
+
+        @include lg-size {
+          margin-bottom: 0;
+          margin-top: 80px;
+        }
+
+        a {
+          color: $accent_color;
+          font-size: $p_font_size_mobile;
+          font-weight: bold;
+
+          @include sm-size {
+            font-size: $p_font_size_tablet;
+          }
+
+          @include lg-size {
+            font-size: $p_font_size_desktop;
+          }
+        }
+      }
+
+      span {
+        color: $accent_color;
+        font-weight: bold;
+      }
+    }
+  }
+}
