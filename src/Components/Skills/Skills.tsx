@@ -17,6 +17,7 @@ const Skills: React.FC = () => {
           return (
             <div
               key={s.title}
+              title={s.title}
               className="skill-card relative"
               style={{ borderColor: s.color ? s.color : "#000000" }}
               data-aos="fade-up"
