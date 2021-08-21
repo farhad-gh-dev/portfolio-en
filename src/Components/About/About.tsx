@@ -11,7 +11,7 @@ const About: React.FC = () => {
         data-aos="fade-down"
         data-aos-duration="1000"
       >
-        <h2>My Skills</h2>
+        <h2>About Me</h2>
       </div>
       <div className="relative grid grid-cols-1 lg:grid-cols-2">
         <div>

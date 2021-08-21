@@ -12,7 +12,7 @@ const Projects: React.FC = () => {
         data-aos="fade-down"
         data-aos-duration="1000"
       >
-        <h2>My Skills</h2>
+        <h2>My Projects</h2>
       </div>
 
       <div className="projects-container">
