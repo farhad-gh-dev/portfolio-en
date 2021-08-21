@@ -69,8 +69,10 @@ p {
   }
 }
 
-button {
+button,
+a {
   font-size: $button_font_size_mobile;
+  text-transform: capitalize;
 
   @include sm-size {
     font-size: $button_font_size_tablet;

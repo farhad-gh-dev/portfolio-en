@@ -1,0 +1,210 @@
+@import "../../../Style/breakpoints";
+@import "../../../Style/variables";
+
+.project-card {
+  padding-bottom: 35px;
+  margin-bottom: 40px;
+
+  @include sm-size {
+    padding-bottom: 25px;
+    margin-bottom: 75px;
+  }
+
+  @include lg-size {
+    padding-bottom: 50px;
+    margin-bottom: 70px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    width: 135px;
+    background-color: #000;
+
+    @include sm-size {
+      width: 215px;
+      height: 2px;
+    }
+
+    @include lg-size {
+      width: 300px;
+    }
+  }
+
+  .project-image-container {
+    .desktop-screenshot {
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+
+      @include sm-size {
+        box-shadow: 8px 8px 35px rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    .mobile-screenshot {
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.33);
+      width: 20%;
+      border: 1px solid #ffffff;
+      border-radius: 5px;
+
+      @include sm-size {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.33);
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .project-text-area {
+    padding-top: 20px;
+
+    @include lg-size {
+      padding-top: 30px;
+    }
+
+    h3 {
+      margin-bottom: 55px;
+
+      @include sm-size {
+        margin-bottom: 60px;
+      }
+
+      @include lg-size {
+        margin-bottom: 80px;
+      }
+      span {
+        display: inline-block;
+        &::first-letter {
+          color: $accent_color;
+        }
+      }
+    }
+
+    .description {
+      margin-bottom: 18px;
+      padding-left: 40px;
+
+      @include sm-size {
+        margin-bottom: 15px;
+        padding-left: 175px;
+      }
+
+      @include lg-size {
+        margin-bottom: 22px;
+        padding-left: 50px;
+      }
+
+      @include xl-size {
+        padding-left: 80px;
+      }
+
+      @include xxl-size {
+        padding-left: 145px;
+      }
+    }
+
+    .project-details {
+      margin-bottom: 14px;
+
+      @include sm-size {
+        margin-bottom: 26px;
+      }
+
+      @include lg-size {
+        margin-bottom: 19px;
+      }
+
+      p {
+        color: #b3b3b3;
+        font-size: $small_paragraph_mobile;
+        margin-bottom: 4px;
+
+        @include sm-size {
+          font-size: $small_paragraph_tablet;
+        }
+
+        @include lg-size {
+          font-size: $small_paragraph_desktop;
+          margin-bottom: 6px;
+        }
+
+        span {
+          color: #000000;
+          text-transform: capitalize;
+        }
+      }
+    }
+
+    .project-links {
+      a {
+        &:first-child {
+          margin-right: 25px;
+        }
+      }
+    }
+  }
+
+  &.left {
+    &::after {
+      left: 0;
+    }
+
+    .project-image-container {
+      padding: 0 30px 23px 0;
+
+      @include sm-size {
+        padding: 0 65px 55px 0;
+      }
+
+      .mobile-screenshot {
+        right: 0;
+      }
+    }
+
+    .project-text-area {
+      @include lg-size {
+        padding-left: 35px;
+      }
+
+      @include xl-size {
+        padding-left: 60px;
+      }
+
+      @include xxl-size {
+        padding-left: 80px;
+      }
+    }
+  }
+
+  &.right {
+    &::after {
+      right: 0;
+    }
+
+    .project-image-container {
+      padding: 0 0 23px 30px;
+
+      @include sm-size {
+        padding: 0 0 55px 65px;
+      }
+
+      .mobile-screenshot {
+        left: 0;
+      }
+    }
+
+    .project-text-area {
+      @include lg-size {
+        padding-right: 35px;
+      }
+
+      @include xl-size {
+        padding-right: 60px;
+      }
+
+      @include xxl-size {
+        padding-right: 80px;
+      }
+    }
+  }
+}

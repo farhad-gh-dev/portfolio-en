@@ -2,10 +2,12 @@ import React, { useEffect } from "react";
 import Aos from "aos";
 import Header from "./Components/Header/Header";
 import Skills from "./Components/Skills/Skills";
+import Projects from "./Components/Projects/Projects";
 import "./Style/app.scss";
 import "aos/dist/aos.css";
 
 const App: React.FC = () => {
+  // For reveal animations
   useEffect(() => {
     Aos.init({
       once: true,
@@ -17,7 +19,7 @@ const App: React.FC = () => {
     <div className="App">
       <Header />
       <Skills />
-      <div className="h-40 w-full">test</div>;
+      <Projects />
     </div>
   );
 };
