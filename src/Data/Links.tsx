@@ -3,9 +3,9 @@ import { ReactComponent as GithubIcon } from "../Assets/icons/github.svg";
 import { ReactComponent as LinkedInIcon } from "../Assets/icons/linkedin.svg";
 
 export const socialMediaLinks = [
-  { icon: TwitterIcon, alt: "twitter" },
-  { icon: GithubIcon, alt: "github" },
-  { icon: LinkedInIcon, alt: "linked in" },
+  { href: "/", icon: TwitterIcon, alt: "twitter" },
+  { href: "/", icon: GithubIcon, alt: "github" },
+  { href: "/", icon: LinkedInIcon, alt: "linked in" },
 ];
 
 export const navbarLinks = [
