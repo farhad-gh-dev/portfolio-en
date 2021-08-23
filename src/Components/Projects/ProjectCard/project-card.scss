@@ -121,6 +121,10 @@
       a {
         &:first-child {
           margin-right: 25px;
+
+          @include sm-size {
+            margin-right: 50px;
+          }
         }
       }
     }
