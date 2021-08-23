@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
 
   return (
     <div
-      className={`navbar absolute top-0 right-0 sm:w-auto z-30${
+      className={`navbar absolute top-0 right-0 sm:w-auto z-50${
         isActive ? " active" : ""
       }`}
     >
