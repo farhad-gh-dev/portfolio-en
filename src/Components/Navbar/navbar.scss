@@ -3,6 +3,7 @@
 
 .navbar {
   height: auto;
+  z-index: 1000;
 
   @include sm-size {
     top: 50px;
