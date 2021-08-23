@@ -50,8 +50,8 @@ const ProjectCard: React.FC<Props> = ({
           <h3>
             {projectData.title.split(" ").map((word) => {
               return (
-                <React.Fragment>
-                  <span>{word}</span>{" "}
+                <React.Fragment key={word}>
+                  <span className="custom-primary-font">{word}</span>{" "}
                 </React.Fragment>
               );
             })}
@@ -77,8 +77,12 @@ const ProjectCard: React.FC<Props> = ({
         </div>
 
         <div className="project-links" data-aos="fade-up" data-aos-delay="500">
-          <a href={projectData.demoLink}>live view</a>
-          <a href={projectData.githubRepoLink}>Git repository</a>
+          <a href={projectData.demoLink} target="_blank" rel="noreferrer">
+            live view
+          </a>
+          <a href={projectData.githubRepoLink} target="_blank" rel="noreferrer">
+            Git repository
+          </a>
         </div>
       </div>
       <div

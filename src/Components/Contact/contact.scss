@@ -13,16 +13,16 @@
       transform: rotate(90deg);
       transform-origin: right;
       letter-spacing: 0.3em;
-      top: 80px;
+      top: 160px;
 
       @include sm-size {
         font-size: 12px;
-        top: 96px;
+        top: 190px;
       }
 
       @include lg-size {
         font-size: 14px;
-        top: 112px;
+        top: 215px;
         margin-right: 10px;
       }
     }
@@ -63,7 +63,8 @@
           }
         }
         span,
-        a {
+        a,
+        button {
           font-size: $p_font_size_mobile;
           text-transform: capitalize;
           font-weight: bold;
@@ -85,7 +86,8 @@
           }
         }
 
-        a {
+        a,
+        button {
           color: $accent_color;
         }
       }

@@ -18,10 +18,14 @@ const Projects: React.FC = () => {
       <div className="projects-container">
         {loadedProjects.length !== 0
           ? loadedProjects.map((project, index) => {
-              const isLeftSided = index % 2 == 0;
+              const isLeftSided = index % 2 === 0;
 
               return (
-                <ProjectCard projectData={project} isLeftSided={isLeftSided} />
+                <ProjectCard
+                  key={project.title}
+                  projectData={project}
+                  isLeftSided={isLeftSided}
+                />
               );
             })
           : null}
@@ -30,7 +34,7 @@ const Projects: React.FC = () => {
       <div className="load-button-container text-center">
         <button
           onClick={loadMoreProjectsHandler}
-          className="load-button mt-1 sm:mt-0"
+          className="load-button mt-1 sm:mt-0 lg:mt-10 capitalize pt-1 pb-2 px-3 sm:px-6 border sm:border-2 border-black"
           data-aos="fade-up"
           data-aos-delay="100"
         >

@@ -2,17 +2,17 @@
 @import "../../Style/variables";
 
 .footer {
-  padding-top: 50px;
+  padding-top: 30px;
   margin-bottom: 50px;
 
   @include sm-size {
-    padding-top: 70px;
-    margin-bottom: 70px;
+    padding-top: 20px;
+    margin-bottom: 80px;
   }
 
   @include lg-size {
-    padding-top: 80px;
-    margin-bottom: 80px;
+    padding-top: 10px;
+    margin-bottom: 110px;
   }
 
   .social-media-links {

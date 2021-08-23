@@ -1,3 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url("../Assets/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
 h1,
 h2,
 h3,

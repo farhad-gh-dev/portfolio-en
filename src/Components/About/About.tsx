@@ -5,7 +5,7 @@ import "./about.scss";
 
 const About: React.FC = () => {
   return (
-    <div className="section about" id="#about">
+    <div className="section about" id="about">
       <div
         className="section-title text-center"
         data-aos="fade-down"

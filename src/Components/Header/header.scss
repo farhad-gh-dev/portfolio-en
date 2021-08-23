@@ -2,6 +2,7 @@
 @import "../../Style/variables";
 
 .header {
+  background-color: #ffffff;
   margin-bottom: $section_bottom_margin_mobile;
 
   @include sm-size {
@@ -20,7 +21,7 @@
     }
 
     @include lg-size {
-      padding: 80px 80px 0;
+      padding: 60px 80px 0;
     }
 
     .brand-logo {
@@ -182,7 +183,7 @@
 
       @include xxl-size {
         padding: 0 40px 0 120px;
-        margin-bottom: 150px;
+        margin-bottom: 140px;
       }
 
       p {
@@ -207,6 +208,7 @@
     }
 
     .projects-link {
+      display: inline-block;
       width: 120px;
 
       @include sm-size {

@@ -12,7 +12,7 @@ const Skills: React.FC = () => {
       >
         <h2>My Skills</h2>
       </div>
-      <div className="skills-cards-container grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-7">
+      <div className="skills-cards-container grid grid-cols-4 sm:grid-cols-5 lg:grid-cols-7">
         {skillsData.map((s, index) => {
           return (
             <div
@@ -21,8 +21,8 @@ const Skills: React.FC = () => {
               className="skill-card relative"
               style={{ borderColor: s.color ? s.color : "#000000" }}
               data-aos="fade-up"
-              data-aos-delay={`${400 + 100 * index}`}
-              data-aos-duration="900"
+              data-aos-delay={`${100 * index}`}
+              data-aos-duration="700"
             >
               <img src={s.icon} alt={s.title} className="skill-icon absolute" />
             </div>

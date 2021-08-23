@@ -10,7 +10,12 @@ const Footer: React.FC = () => {
         <div className="social-media-links flex sm:items-center mt-1 sm:mt-0">
           {socialMediaLinks.map((link) => {
             return (
-              <a key={link.alt} href={link.href}>
+              <a
+                key={link.alt}
+                href={link.href}
+                target="_blank"
+                rel="noreferrer"
+              >
                 {<link.icon />}
               </a>
             );

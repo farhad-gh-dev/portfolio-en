@@ -16,7 +16,7 @@ const Contact: React.FC = () => {
       <div className="relative grid grid-cols-1 lg:grid-cols-2">
         <div className="text-area relative">
           <div className="small-text absolute right-0 font-bold uppercase">
-            let's do it
+            let's talk business
           </div>
           <p className="contact-description" data-aos="fade-left">
             Interested? Get in touch and let's work together.
@@ -24,7 +24,9 @@ const Contact: React.FC = () => {
           <div className="contact-links">
             <div className="contact-link" data-aos="fade-up">
               <span>email</span>
-              <a href="/test">farhad.dev.contact@gmail.com</a>
+              <a href="mailto:farhad.dev.contact@gmail.com">
+                farhad.dev.contact@gmail.com
+              </a>
             </div>
             <div
               className="contact-link inline-block mr-12 sm:mr-36 lg:mr-20 xl:mr-36"
@@ -32,7 +34,7 @@ const Contact: React.FC = () => {
               data-aos-delay="150"
             >
               <span>phone number</span>
-              <a href="/test">(+98) 903 356 2044</a>
+              <button>(+98) 903 356 2044</button>
             </div>
             <div
               className="contact-link inline-block"
@@ -40,7 +42,13 @@ const Contact: React.FC = () => {
               data-aos-delay="250"
             >
               <span>Twitter</span>
-              <a href="/test">@farhad_dev</a>
+              <a
+                href="https://twitter.com/farhad_dev"
+                target="_blank"
+                rel="noreferrer"
+              >
+                @farhad_dev
+              </a>
             </div>
           </div>
         </div>

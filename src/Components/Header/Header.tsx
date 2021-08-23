@@ -15,13 +15,13 @@ const Header: React.FC = () => {
             <img src={BrandLogo} alt="brand" className="h-auto" />
           </a>
           <span className="small-text font-bold uppercase inline-block">
-            let's do it
+            it's time
           </span>
         </div>
 
         <div className="bottom-right-text absolute bottom-0">
           <span className="small-text font-bold uppercase inline-block">
-            let's do it let's do it let's do it
+            have a great Idea? make it happen
           </span>
         </div>
 
@@ -30,7 +30,9 @@ const Header: React.FC = () => {
             return (
               <a
                 key={link.alt}
-                href="/"
+                href={link.href}
+                target="_blank"
+                rel="noreferrer"
                 className="social-media-link block mb-6 sm:mb-10 lg:mb-11"
               >
                 {<link.icon />}
@@ -46,9 +48,10 @@ const Header: React.FC = () => {
           </div>
           <div className="description">
             <p>
-              I Am A 21 Years Old <span>Front-End Developer</span>, With Strong
-              Understanding Of <span>HTML</span>, <span>CSS</span> And{" "}
-              <span>JavaScript</span> And I Love Learning New Web Technologies.
+              I Am A 21 Years Old <span>Front-End Developer</span> Based In
+              Iran, My Job Is To Bring <span>Great Ideas</span> To Life With
+              Awesome People And I <span>Love</span> Learning New Web
+              Technologies.
             </p>
           </div>
           <div className="mb-32 lg:mb-24 pl-24 sm:pl-56 md:pl-72 lg:pl-0 text-center">
