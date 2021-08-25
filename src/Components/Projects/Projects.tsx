@@ -31,12 +31,14 @@ const Projects: React.FC = () => {
           : null}
       </div>
 
-      <div className="load-button-container text-center">
+      <div
+        className="load-button-container text-center"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
         <button
           onClick={loadMoreProjectsHandler}
-          className="load-button mt-1 sm:mt-0 lg:mt-10 capitalize pt-1 pb-2 px-3 sm:px-6 border sm:border-2 border-black"
-          data-aos="fade-up"
-          data-aos-delay="100"
+          className="load-button mt-1 sm:mt-0 lg:mt-10 capitalize pt-1 pb-2 px-3 sm:px-6 border sm:border-2 border-black hover:bg-black hover:text-white"
         >
           show more projects
         </button>

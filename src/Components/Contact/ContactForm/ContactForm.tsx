@@ -65,7 +65,7 @@ const ContactForm: React.FC = () => {
         data-aos-delay="200"
       >
         <button
-          className="capitalize font-bold pt-1 pb-2 px-3 sm:px-6 border-2 border-black"
+          className="capitalize font-bold pt-1 pb-2 px-3 sm:px-6 border-2 border-black hover:bg-black hover:text-white"
           type="submit"
         >
           Submit

@@ -1,6 +1,5 @@
 import React from "react";
-import AboutImage1 from "../../Assets/about-1.png";
-import AboutImage2 from "../../Assets/about-2.png";
+import AboutImage from "../../Assets/about.jpg";
 import "./about.scss";
 
 const About: React.FC = () => {
@@ -16,12 +15,7 @@ const About: React.FC = () => {
       <div className="relative grid grid-cols-1 lg:grid-cols-2">
         <div>
           <div className="image-container relative" data-aos="fade-right">
-            <img src={AboutImage1} alt="about" className="back-image w-full" />
-            <img
-              src={AboutImage2}
-              alt="about"
-              className="front-image absolute bottom-0 right-0"
-            />
+            <img src={AboutImage} alt="about" className="back-image w-full" />
           </div>
         </div>
         <div className="text-area">

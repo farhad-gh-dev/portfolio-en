@@ -3,43 +3,44 @@
 
 .about {
   .image-container {
-    padding: 0 85px 49px 0;
+    padding-bottom: 15px;
 
     @include sm-size {
-      padding: 0 190px 110px 0;
+      padding: 0 0 0px 0;
     }
 
     @include lg-size {
+      padding: 0 20px 170px 0;
+    }
+
+    @include xl-size {
+      padding: 0 70px 170px 0;
+    }
+
+    @include xxl-size {
       padding: 0 160px 170px 0;
     }
 
-    .front-image {
-      width: 42%;
+    .back-image {
+      border: 2px solid white;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.18);
 
       @include sm-size {
-        width: 52%;
+        box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.2);
       }
     }
   }
 
   .text-area {
-    margin-top: 30px;
+    margin-top: 20px;
 
     @include sm-size {
       margin-top: 50px;
     }
 
     @include lg-size {
-      margin-top: 35px;
+      margin-top: 0;
       padding-left: 30px;
-    }
-
-    @include xl-size {
-      padding-left: 60px;
-    }
-
-    @include xxl-size {
-      padding-left: 90px;
     }
 
     p {

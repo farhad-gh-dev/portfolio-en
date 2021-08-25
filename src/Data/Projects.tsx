@@ -49,7 +49,6 @@ export const projectsData = [
     demoLink: "https://organic-alpha.vercel.app/",
     githubRepoLink: "https://github.com/farhad-gh-dev/organic",
   },
-
   {
     title: "apex graphics",
     desktopScreenshot: ApexGraphicsDesktopImage,
