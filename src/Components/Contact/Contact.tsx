@@ -34,7 +34,7 @@ const Contact: React.FC = () => {
               data-aos-delay="150"
             >
               <span>phone number</span>
-              <button>(+98) 903 356 2044</button>
+              <button>(+98) 930 834 9179</button>
             </div>
             <div
               className="contact-link inline-block"
