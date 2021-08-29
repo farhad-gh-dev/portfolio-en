@@ -4,6 +4,7 @@ import JavascriptIcon from "../Assets/icons/javascript.png";
 import TypescriptIcon from "../Assets/icons/typescript.png";
 import ReactIcon from "../Assets/icons/react.png";
 import ReduxIcon from "../Assets/icons/redux.png";
+import RectRouterIcon from "../Assets/icons/react-router.png";
 import NextIcon from "../Assets/icons/next-js.png";
 import GatsbyIcon from "../Assets/icons/gatsby-js.png";
 import NodeIcon from "../Assets/icons/node-js.png";
@@ -23,6 +24,7 @@ export const skillsData = [
   { title: "Typescript", icon: TypescriptIcon, color: "#3178C6" },
   { title: "React JS", icon: ReactIcon, color: "#61DAFB" },
   { title: "Redux", icon: ReduxIcon, color: "#764ABC" },
+  { title: "React-Router", icon: RectRouterIcon, color: "#CA4245" },
   { title: "Next JS", icon: NextIcon, color: "#000000" },
   { title: "Gatsby JS", icon: GatsbyIcon, color: "#663399" },
   { title: "Node JS", icon: NodeIcon, color: "#5CA44C" },
