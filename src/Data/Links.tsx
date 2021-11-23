@@ -6,7 +6,7 @@ export const socialMediaLinks = [
   { href: "https://twitter.com/farhad_dev", icon: TwitterIcon, alt: "twitter" },
   { href: "https://github.com/farhad-gh-dev", icon: GithubIcon, alt: "github" },
   {
-    href: "https://www.linkedin.com/in/farhad-gholami-dev/",
+    href: "https://www.linkedin.com/in/mohammad-hosein-gholami-462827221",
     icon: LinkedInIcon,
     alt: "linked in",
   },
