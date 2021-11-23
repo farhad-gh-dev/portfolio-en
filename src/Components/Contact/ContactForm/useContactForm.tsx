@@ -25,7 +25,7 @@ const useContactForm = () => {
 
     //SEND TO API
     try {
-      const { data } = await axios.post(
+      await axios.post(
         "https://applications-backend.herokuapp.com/email",
         formValues
       );
