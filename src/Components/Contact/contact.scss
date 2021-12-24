@@ -67,7 +67,7 @@
         button {
           font-size: $p_font_size_mobile;
           text-transform: capitalize;
-          font-weight: bold;
+          font-weight: 500;
 
           @include sm-size {
             font-size: $p_font_size_tablet;

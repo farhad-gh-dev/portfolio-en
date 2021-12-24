@@ -14,13 +14,13 @@ const Header: React.FC = () => {
           <a href="/">
             <img src={BrandLogo} alt="brand" className="h-auto" />
           </a>
-          <span className="small-text font-bold uppercase inline-block">
+          <span className="small-text font-medium uppercase inline-block">
             it's time
           </span>
         </div>
 
         <div className="bottom-right-text absolute bottom-0">
-          <span className="small-text font-bold uppercase inline-block">
+          <span className="small-text font-medium uppercase inline-block">
             have a great Idea? make it happen
           </span>
         </div>
@@ -57,7 +57,7 @@ const Header: React.FC = () => {
           <div className="mb-32 lg:mb-24 pl-24 sm:pl-56 md:pl-72 lg:pl-0 text-center">
             <a
               href="#projects"
-              className="projects-link relative font-bold capitalize"
+              className="projects-link relative font-medium capitalize"
             >
               check out my projects
             </a>

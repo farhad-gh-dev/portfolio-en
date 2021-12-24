@@ -79,7 +79,7 @@
         a {
           color: $accent_color;
           font-size: $p_font_size_mobile;
-          font-weight: bold;
+          font-weight: 500;
 
           @include sm-size {
             font-size: $p_font_size_tablet;
@@ -93,7 +93,7 @@
 
       span {
         color: $accent_color;
-        font-weight: bold;
+        font-weight: 500;
       }
     }
   }

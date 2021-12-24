@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
   return (
     <div className="section footer">
       <div className="text-area flex justify-center" data-aos="fade-up">
-        <p className="font-bold">Designed and Developed by Farhad Gholamie</p>
+        <p className="font-medium">Designed and Developed by Farhad Gholamie</p>
         <div className="social-media-links flex sm:items-center mt-1 sm:mt-0">
           {socialMediaLinks.map((link) => {
             return (
