@@ -1,16 +1,14 @@
 import React from "react";
 import { ProjectType } from "../../../Data/Projects";
 import "./project-card.scss";
+import ProjectCardImage from "./ProjectCardImage";
 
 interface Props {
   projectData: ProjectType;
   isLeftSided?: boolean;
 }
 
-const ProjectCard: React.FC<Props> = ({
-  projectData,
-  isLeftSided = "true",
-}) => {
+const ProjectCard: React.FC<Props> = ({ projectData, isLeftSided = true }) => {
   return (
     <div
       key={projectData.title}
@@ -19,21 +17,12 @@ const ProjectCard: React.FC<Props> = ({
       }`}
     >
       <div className={`${isLeftSided ? " lg:order-1" : " lg:order-2"}`}>
-        <div
-          className="project-image-container relative"
-          data-aos={`${isLeftSided ? "fade-right" : "fade-left"}`}
-        >
-          <img
-            src={projectData.desktopScreenshot}
-            alt={projectData.title}
-            className="desktop-screenshot w-full rounded sm:rounded-lg lg:rounded-xl"
-          />
-          <img
-            src={projectData.mobileScreenshot}
-            alt={projectData.title}
-            className="mobile-screenshot absolute bottom-0"
-          />
-        </div>
+        <ProjectCardImage
+          isLeftSided={isLeftSided}
+          desktopImageSrc={projectData.desktopScreenshot}
+          mobileImageSrc={projectData.mobileScreenshot}
+          imageAlt={projectData.title}
+        />
       </div>
       <div
         className={`project-text-area${

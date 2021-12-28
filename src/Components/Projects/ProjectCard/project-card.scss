@@ -16,11 +16,28 @@
   }
 
   .project-image-container {
+    .desktop-screenshot,
+    .mobile-screenshot {
+      display: block;
+
+      &.hide-image {
+        display: none;
+      }
+    }
+
+    .image-placeholder {
+      background-color: #c7c7cd;
+    }
+
     .desktop-screenshot {
       box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
 
       @include sm-size {
         box-shadow: 8px 8px 35px rgba(0, 0, 0, 0.2);
+      }
+
+      &.image-placeholder {
+        padding-top: 56.25%;
       }
     }
 
@@ -33,6 +50,10 @@
       @include sm-size {
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.33);
         border-radius: 5px;
+      }
+
+      &.image-placeholder {
+        padding-top: 42.688%;
       }
     }
   }
