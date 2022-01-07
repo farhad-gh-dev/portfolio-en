@@ -3,14 +3,14 @@ import { projectsData, ProjectsDataType } from "../../Data/Projects";
 
 export const useProjectsData = () => {
   const [loadedProjects, setLoadedProjects] = useState<ProjectsDataType>([]);
+  const [allProjectsLoaded, setAllProjectLoaded] = useState<boolean>(false);
 
   const loadMoreProjectsHandler = () => {
     if (loadedProjects.length + 3 < projectsData.length) {
       setLoadedProjects(projectsData.slice(0, loadedProjects.length + 3));
-    } else if (loadedProjects.length === projectsData.length) {
-      return;
-    } else {
+    }else {
       setLoadedProjects(projectsData);
+      setAllProjectLoaded(true);
     }
   };
 
@@ -20,6 +20,7 @@ export const useProjectsData = () => {
 
   return {
     loadedProjects,
+    allProjectsLoaded,
     loadMoreProjectsHandler,
   };
 };
