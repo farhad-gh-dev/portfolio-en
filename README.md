@@ -16,23 +16,23 @@ This is a responsive template I designed and developed to showcase my projects.
 
 React (typescript) - Tailwind - Sass
 
-## Build and Development
+## Development and Build
 
 In case of any use of this project, contribution to my [github account](https://github.com/farhad-gh-dev) is needed. To use this template clone this repository or download it, then run **npm install** to install project packages.
 
     git clone https://github.com/farhad-gh-dev/portfolio-en.git
-    npm run install
+    npm install
 
---
+\-
 Now in the project directory, you can run the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000/) to view it in the browser.
 
-    npm run start
+      npm run start
 
---
+\-
 You can also build the app for production mode, It correctly bundles React in production mode and optimizes the build for the best performance.
 
-    npm run build
+      npm run build
 
 Now you can deploy this project!
 
