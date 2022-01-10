@@ -44,7 +44,7 @@ Now you can deploy this project!
     ├── src                     # Source files
     ├── .gitignore
     ├── README.md
-    ├── craco.config.js			# Related to tailwind installation
+    ├── craco.config.js         # Related to tailwind installation
     ├── package-lock.json
     ├── package.json
     ├── tailwind.config.js
