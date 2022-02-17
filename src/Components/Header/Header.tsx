@@ -9,7 +9,7 @@ const Header: React.FC = () => {
   return (
     <div className="header lg:flex relative w-full h-screen">
       <Navbar />
-      <div className="text-area lg:flex-grow flex flex-col justify-between h-full relative z-10">
+      <div className="text-area lg:flex-grow flex flex-col justify-between h-full relative z-10 overflow-hidden">
         <div className="brand-logo">
           <a href="/">
             <img src={BrandLogo} alt="brand" className="h-auto" />
