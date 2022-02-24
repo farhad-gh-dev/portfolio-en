@@ -22,6 +22,7 @@ const ContactForm: React.FC = () => {
               onChange={(e) => formUpdateHandler(e)}
               placeholder="Name *"
               maxLength={26}
+              autoComplete="off"
               required
             />
             <div className="input-border absolute top-0 left-0"></div>
@@ -38,6 +39,7 @@ const ContactForm: React.FC = () => {
               value={formValues.location}
               onChange={(e) => formUpdateHandler(e)}
               placeholder="Location"
+              autoComplete="off"
               maxLength={95}
             />
             <div className="input-border absolute top-0 left-0"></div>
@@ -50,6 +52,7 @@ const ContactForm: React.FC = () => {
               onChange={(e) => formUpdateHandler(e)}
               placeholder="Email Address *"
               maxLength={64}
+              autoComplete="off"
               required
             />
             <div className="input-border absolute top-0 left-0"></div>
