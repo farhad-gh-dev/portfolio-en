@@ -3,7 +3,8 @@ import { useProjectsData } from "./useProjectsData";
 import ProjectCard from "./ProjectCard/ProjectCard";
 
 const Projects: React.FC = () => {
-  const { loadedProjects, allProjectsLoaded, loadMoreProjectsHandler } = useProjectsData();
+  const { loadedProjects, allProjectsLoaded, loadMoreProjectsHandler } =
+    useProjectsData();
 
   return (
     <div className="section projects" id="projects">
@@ -31,18 +32,20 @@ const Projects: React.FC = () => {
           : null}
       </div>
 
-      {!allProjectsLoaded ? (<div
-        className="load-button-container text-center"
-        data-aos="fade-up"
-        data-aos-delay="100"
-      >
-        <button
-          onClick={loadMoreProjectsHandler}
-          className="load-button mt-1 sm:mt-0 lg:mt-10 capitalize pt-1 pb-2 px-3 sm:px-6 border sm:border-2 border-black hover:bg-black hover:text-white"
+      {!allProjectsLoaded ? (
+        <div
+          className="load-button-container text-center"
+          data-aos="fade-up"
+          data-aos-delay="100"
         >
-          show more projects
-        </button>
-      </div>) : null}
+          <button
+            onClick={loadMoreProjectsHandler}
+            className="load-button mt-1 sm:mt-0 lg:mt-10 capitalize pt-1 pb-2 px-3 sm:px-6 border sm:border-2 border-black hover:bg-black hover:text-white transition-all"
+          >
+            show more projects
+          </button>
+        </div>
+      ) : null}
     </div>
   );
 };

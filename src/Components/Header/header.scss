@@ -224,6 +224,7 @@
         height: 2px;
         width: 30px;
         background-color: $accent_color;
+        transition: 0.15s ease-in-out;
 
         @include sm-size {
           width: 40px;
@@ -233,6 +234,19 @@
           bottom: -23px;
           height: 3px;
           width: 50px;
+        }
+      }
+
+      &:hover {
+        &::after {
+          width: 40px;
+
+          @include sm-size {
+            width: 52px;
+          }
+          @include lg-size {
+            width: 65px;
+          }
         }
       }
     }
