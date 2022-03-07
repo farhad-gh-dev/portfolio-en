@@ -77,9 +77,21 @@
         }
 
         a {
+          position: relative;
           color: $accent_color;
           font-size: $p_font_size_mobile;
           font-weight: 500;
+
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: $accent_color;
+            transition: 0.2s ease-in-out;
+          }
 
           @include sm-size {
             font-size: $p_font_size_tablet;
@@ -87,6 +99,12 @@
 
           @include lg-size {
             font-size: $p_font_size_desktop;
+          }
+
+          &:hover {
+            &::before {
+              width: 100%;
+            }
           }
         }
       }

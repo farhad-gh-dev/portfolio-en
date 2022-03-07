@@ -42,7 +42,7 @@ const About: React.FC = () => {
           </p>
           <p className="projects-link" data-aos="fade-up" data-aos-delay="250">
             - Want to work together?{" "}
-            <a href="mailto:farhad.dev.contact@gmail.com">contact me.</a>
+            <a href="mailto:farhad.dev.contact@gmail.com">contact me</a>
           </p>
         </div>
       </div>
