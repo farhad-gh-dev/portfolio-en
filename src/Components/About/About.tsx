@@ -24,10 +24,9 @@ const About: React.FC = () => {
             data-aos="fade-right"
             data-aos-delay="250"
           >
-            Until a few month ago, I was a Front-End Dev at <span>QLindex</span>
-            , but currently I am looking for an opportunity to enhance my
-            skills, test my limits and work on interfaces that make people
-            excited.
+            Until a few month ago, I was a Front-End Dev at <span>Zhaket</span>,
+            but currently I am looking for an opportunity to enhance my skills,
+            test my limits and work on interfaces that make people excited.
           </p>
           <p data-aos="fade-left" data-aos-delay="250">
             It was about a year and a half ago I chose my path to be a front-end
