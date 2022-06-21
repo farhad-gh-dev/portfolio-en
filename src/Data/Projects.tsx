@@ -1,3 +1,5 @@
+import GameGuideDesktopImage from "../Assets/projects/game-guide-desktop.jpg";
+import GameGuideMobileImage from "../Assets/projects/game-guide-mobile.jpg";
 import WikiOlympusDesktopImage from "../Assets/projects/wiki-olympus-desktop.jpg";
 import WikiOlympusMobileImage from "../Assets/projects/wiki-olympus-mobile.jpg";
 import OrganicDesktopImage from "../Assets/projects/organic-desktop.jpg";
@@ -14,6 +16,18 @@ import StyleDesktopImage from "../Assets/projects/style-desktop.jpg";
 import StyleMobileImage from "../Assets/projects/style-mobile.jpg";
 
 export const projectsData = [
+  {
+    title: "game guide",
+    desktopScreenshot: GameGuideDesktopImage,
+    mobileScreenshot: GameGuideMobileImage,
+    description: `Game Store App with different categories (using custom UI-Kit)`,
+    date: "6/1/2022",
+    skills: "Development / CI-CD",
+    technologies:
+      "React JS, Typescript, Redux, React-Router, Styled Components, Storybook, Jest",
+    demoLink: "https://game-guide-app.vercel.app/",
+    githubRepoLink: "https://github.com/farhad-gh-dev/game-guide",
+  },
   {
     title: "yummy menu",
     desktopScreenshot: YummyMenuDesktopImage,
