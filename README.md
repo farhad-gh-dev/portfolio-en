@@ -2,7 +2,7 @@
 
 This is a responsive template I designed and developed to showcase my projects.
 
-![enter image description here](https://raw.githubusercontent.com/farhad-gh-dev/portfolio-en/master/src/Assets/screenshots.png)
+![Portfolio screenshot](https://raw.githubusercontent.com/farhad-gh-dev/portfolio-en/master/src/Assets/screenshots.png)
 
 ## Sections
 
