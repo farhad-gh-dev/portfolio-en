@@ -10,12 +10,17 @@ import GatsbyIcon from "../Assets/icons/gatsby-js.png";
 import NodeIcon from "../Assets/icons/node-js.png";
 import MongoDBIcon from "../Assets/icons/mongo-db.png";
 import JestIcon from "../Assets/icons/jest.png";
+import ReactTestingLibraryIcon from "../Assets/icons/react-testing-library.png";
+import CypressIcon from "../Assets/icons/cypress.png";
 import SassIcon from "../Assets/icons/sass.png";
+import StyledComponentsIcon from "../Assets/icons/styled-components.png";
+import StorybookIcon from "../Assets/icons/storybook.png";
 import BootstrapIcon from "../Assets/icons/bootstrap.png";
 import AdobeXDIcon from "../Assets/icons/adobe-xd.png";
 import GitIcon from "../Assets/icons/git.png";
 import WebpackIcon from "../Assets/icons/webpack.png";
 import TailwindIcon from "../Assets/icons/tailwind.png";
+import MaterialUiIcon from "../Assets/icons/material-ui.png";
 
 export const skillsData = [
   { title: "HTML 5", icon: HtmlIcon, color: "#E44D26" },
@@ -30,9 +35,18 @@ export const skillsData = [
   { title: "Node JS", icon: NodeIcon, color: "#5CA44C" },
   { title: "Mongo DB", icon: MongoDBIcon, color: "#402E1E" },
   { title: "Jest", icon: JestIcon, color: "#C63D14" },
+  {
+    title: "React Testing Library",
+    icon: ReactTestingLibraryIcon,
+    color: "#FC4544",
+  },
+  { title: "Cypress", icon: CypressIcon, color: "#5C5C5E" },
   { title: "Sass", icon: SassIcon, color: "#CD6799" },
-  { title: "Bootstrap", icon: BootstrapIcon, color: "#8812FC" },
+  { title: "Styled Components", icon: StyledComponentsIcon, color: "#FBC334" },
+  { title: "Storybook", icon: StorybookIcon, color: "#FF4785" },
+  { title: "Material UI", icon: MaterialUiIcon, color: "#00B0FF" },
   { title: "Tailwind", icon: TailwindIcon, color: "#11CDB6" },
+  { title: "Bootstrap", icon: BootstrapIcon, color: "#8812FC" },
   { title: "Adobe XD", icon: AdobeXDIcon, color: "#CC4EC5" },
   { title: "Git", icon: GitIcon, color: "#000000" },
   { title: "Webpack", icon: WebpackIcon, color: "#1C78C0" },
