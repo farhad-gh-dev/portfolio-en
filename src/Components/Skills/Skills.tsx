@@ -12,7 +12,7 @@ const Skills: React.FC = () => {
       >
         <h2>My Skills</h2>
       </div>
-      <div className="skills-cards-container grid grid-cols-4 sm:grid-cols-5 lg:grid-cols-7">
+      <div className="skills-cards-container grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-8">
         {skillsData.map((s, index) => {
           return (
             <div
