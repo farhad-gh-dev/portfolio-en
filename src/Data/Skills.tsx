@@ -21,6 +21,7 @@ import GitIcon from "../Assets/icons/git.png";
 import WebpackIcon from "../Assets/icons/webpack.png";
 import TailwindIcon from "../Assets/icons/tailwind.png";
 import MaterialUiIcon from "../Assets/icons/material-ui.png";
+import DockerIcon from "../Assets/icons/docker.png";
 
 export const skillsData = [
   { title: "HTML 5", icon: HtmlIcon, color: "#E44D26" },
@@ -49,5 +50,6 @@ export const skillsData = [
   { title: "Mongo DB", icon: MongoDBIcon, color: "#402E1E" },
   { title: "Git", icon: GitIcon, color: "#000000" },
   { title: "Webpack", icon: WebpackIcon, color: "#1C78C0" },
+  { title: "Docker", icon: DockerIcon, color: "#2497ED" },
   { title: "Adobe XD", icon: AdobeXDIcon, color: "#CC4EC5" },
 ];
