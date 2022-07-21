@@ -40,11 +40,7 @@ export const skillsData = [
   { title: "Material UI", icon: MaterialUiIcon, color: "#00B0FF" },
   { title: "Bootstrap", icon: BootstrapIcon, color: "#8812FC" },
   { title: "Jest", icon: JestIcon, color: "#C63D14" },
-  {
-    title: "React Testing Library",
-    icon: ReactTestingLibraryIcon,
-    color: "#FC4544",
-  },
+  { title: "React Testing Library", icon: ReactTestingLibraryIcon, color: "#FC4544" },
   { title: "Cypress", icon: CypressIcon, color: "#5C5C5E" },
   { title: "Node JS", icon: NodeIcon, color: "#5CA44C" },
   { title: "Mongo DB", icon: MongoDBIcon, color: "#402E1E" },
