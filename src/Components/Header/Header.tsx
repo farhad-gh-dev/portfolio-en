@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
 import BrandLogo from "../../Assets/brand-logo.png";
+import ResumeFile from "../../Assets/resume.pdf";
 import BackgroundImage from "../../Assets/header-background.jpg";
 import { socialMediaLinks } from "../../Data/Links";
 import "./header.scss";
@@ -56,7 +57,7 @@ const Header: React.FC = () => {
           </div>
           <div className="mb-32 lg:mb-24 pl-24 sm:pl-56 md:pl-72 lg:pl-0 text-center">
             <a
-              href="../../Assets/resume.pdf"
+              href={ResumeFile}
               download="Farhad_Gholami_Resume"
               className="resume-link relative font-medium capitalize"
             >
