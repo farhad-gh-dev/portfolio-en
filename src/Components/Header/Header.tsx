@@ -58,7 +58,7 @@ const Header: React.FC = () => {
           <div className="mb-32 lg:mb-24 pl-24 sm:pl-56 md:pl-72 lg:pl-0 text-center">
             <a
               href={ResumeFile}
-              download="Farhad_Gholami_Resume"
+              download="Farhad_Gholami_Resume.pdf"
               className="resume-link relative font-medium capitalize"
             >
               Download My Resume <span className="font-medium"> | </span>
