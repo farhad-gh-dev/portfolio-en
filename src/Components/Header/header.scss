@@ -207,47 +207,37 @@
       }
     }
 
-    .projects-link {
-      display: inline-block;
-      width: 120px;
-
-      @include sm-size {
-        width: auto;
+    .resume-link, .projects-link {
+      display: block;
+      &::first-letter{
+        color: $accent_color;
       }
 
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: -17px;
-        left: 50%;
-        transform: translateX(-50%);
-        height: 2px;
-        width: 30px;
-        background-color: $accent_color;
-        transition: 0.15s ease-in-out;
+      @include lg-size {
+        display: inline-block;
+      }
+    }
 
-        @include sm-size {
-          width: 40px;
-        }
+    .resume-link{
+      margin-bottom: 8px;
+      
+      @include lg-size {
+        margin-bottom: 0;
+      }
+
+      span{
+        display: none;
 
         @include lg-size {
-          bottom: -23px;
-          height: 3px;
-          width: 50px;
+          display: unset;
         }
       }
+    }
 
-      &:hover {
-        &::after {
-          width: 40px;
-
-          @include sm-size {
-            width: 52px;
-          }
-          @include lg-size {
-            width: 65px;
-          }
-        }
+    .projects-link{
+      
+      @include lg-size {
+        margin-left: 5px;
       }
     }
   }

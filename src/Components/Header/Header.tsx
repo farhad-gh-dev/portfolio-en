@@ -56,9 +56,17 @@ const Header: React.FC = () => {
           </div>
           <div className="mb-32 lg:mb-24 pl-24 sm:pl-56 md:pl-72 lg:pl-0 text-center">
             <a
+              href="../../Assets/resume.pdf"
+              download="Farhad_Gholami_Resume"
+              className="resume-link relative font-medium capitalize"
+            >
+              Download My Resume <span className="font-medium"> | </span>
+            </a>
+            <a
               href="#projects"
               className="projects-link relative font-medium capitalize"
             >
+              {" "}
               check out my projects
             </a>
           </div>
