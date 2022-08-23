@@ -29,11 +29,11 @@ const About: React.FC = () => {
             test my limits and work on interfaces that make people excited.
           </p>
           <p data-aos="fade-left" data-aos-delay="250">
-            It was about a year and a half ago I chose my path to be a front-end
-            developer, I spent my time learning, working with different
-            frameworks like <span>React</span>, <span>Angular</span> and{" "}
-            <span>Vue</span> and decided to choose React as my main framework
-            and to get reaaally good at it.
+            It was about three ago I chose my path to be a front-end developer,
+            I spent my time learning, working with different frameworks like{" "}
+            <span>React</span>, <span>Angular</span> and <span>Vue</span> and
+            decided to choose React as my main framework and to get reaaally
+            good at it.
           </p>
           <p data-aos="fade-right" data-aos-delay="250">
             since then I have been learning trending technologies and tools to
