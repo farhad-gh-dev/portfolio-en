@@ -3,7 +3,7 @@ import { ReactComponent as GithubIcon } from "../Assets/icons/github.svg";
 import { ReactComponent as LinkedInIcon } from "../Assets/icons/linkedin.svg";
 
 export const socialMediaLinks = [
-  { href: "#", icon: TwitterIcon, alt: "twitter" },
+  // { href: "https://twitter.com/farhad_dev", icon: TwitterIcon, alt: "twitter" },
   { href: "https://github.com/farhad-gh-dev", icon: GithubIcon, alt: "github" },
   {
     href: "https://www.linkedin.com/in/mohammad-hosein-gholami-462827221",
